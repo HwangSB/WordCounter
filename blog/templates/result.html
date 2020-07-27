@@ -1,0 +1,13 @@
+<h1>원문: {{ text }}</h1>
+
+<h1>공백 포함: {{ text|length }} 글자</h1>
+
+<h1>공백 제외: {{ text|cut:" "|length }} 글자</h1>
+
+<h1>{{ text|wordcount }}단어 </h1>
+
+{% if text|length > 10 %}
+    <p>{{ text|slice:":10" }}...</p>
+{% else %}
+    <p>{{ text }}</p>
+{% endif %}

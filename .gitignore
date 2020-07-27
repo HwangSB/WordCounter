@@ -1,0 +1,8 @@
+db.sqlite3
+**/__pychache__
+venv/
+
+.config_secret/
+/static/
+/media/
+db.sqlite3
